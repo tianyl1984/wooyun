@@ -83,4 +83,12 @@
 			</plugin>
 		</plugins>
 	</build>
+
+	<repositories>
+		<repository>
+			<id>tianyl-repo</id>
+			<name>tianyl-repo</name>
+			<url>https://raw.githubusercontent.com/tianyl1984/maven-repo/master</url>
+		</repository>
+	</repositories>
 </project>
