@@ -15,7 +15,7 @@
 	</dependencies>
 
 	<build>
-		<finalName>wx</finalName>
+		<finalName>wy</finalName>
 		<sourceDirectory>${basedir}/src/main/java</sourceDirectory>
 		<testSourceDirectory>${basedir}/src/test/java</testSourceDirectory>
 		<outputDirectory>${basedir}/webapp/WEB-INF/classes</outputDirectory>
