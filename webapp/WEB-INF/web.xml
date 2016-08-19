@@ -10,7 +10,7 @@
 	</context-param>
 	<context-param>
 		<param-name>jdbcUrl</param-name>
-		<param-value>jdbc:mysql://tianice.51vip.biz:3306/wooyun?useUnicode=true&amp;characterEncoding=utf-8</param-value>
+		<param-value>jdbc:mysql://127.0.0.1:3306/wooyun?useUnicode=true&amp;characterEncoding=utf-8</param-value>
 	</context-param>
 	<context-param>
 		<param-name>jdbcUsername</param-name>
