@@ -16,4 +16,8 @@ public class BugService {
 		return bugDAO.findPage(page);
 	}
 
+	public void delete(Integer id) {
+		bugDAO.delete(id);
+	}
+
 }

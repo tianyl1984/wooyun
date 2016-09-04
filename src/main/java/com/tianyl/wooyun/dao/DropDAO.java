@@ -9,7 +9,11 @@ import com.tianyl.wooyun.model.Drop;
 public class DropDAO {
 
 	public Page<Drop> findPage(Page<Drop> page) {
-		return JdbcUtil.queryPage("select * from drops", page, Drop.class);
+		return JdbcUtil.queryPage("select * from drops where delFlag = ? ", page, Drop.class, false);
+	}
+
+	public void delete(Integer id) {
+		JdbcUtil.update("update drops set delFlag = ? where id = ? ", true, id);
 	}
 
 }

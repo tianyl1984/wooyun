@@ -16,4 +16,8 @@ public class DropService {
 		return dropDAO.findPage(page);
 	}
 
+	public void delete(Integer id) {
+		dropDAO.delete(id);
+	}
+
 }

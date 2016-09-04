@@ -19,4 +19,9 @@ public class BugController {
 		page = bugService.findPage(page);
 		return page;
 	}
+
+	public Object del(Integer id) {
+		bugService.delete(id);
+		return "ok";
+	}
 }

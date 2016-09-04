@@ -20,4 +20,8 @@ public class DropController {
 		return page;
 	}
 
+	public Object del(Integer id) {
+		dropService.delete(id);
+		return "ok";
+	}
 }

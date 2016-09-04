@@ -9,7 +9,11 @@ import com.tianyl.wooyun.model.Bug;
 public class BugDAO {
 
 	public Page<Bug> findPage(Page<Bug> page) {
-		return JdbcUtil.queryPage("select * from bugs", page, Bug.class);
+		return JdbcUtil.queryPage("select * from bugs where delFlag = ? ", page, Bug.class, false);
+	}
+
+	public void delete(Integer id) {
+		JdbcUtil.update("update bugs set delFlag = ? where id = ?", true, id);
 	}
 
 }
